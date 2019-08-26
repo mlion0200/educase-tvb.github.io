@@ -59,33 +59,47 @@
             <div class="container">
                 <div id="doc-header" class="doc-header text-center">
                     <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i> Quick Start</h1>
-                    <div class="meta"><i class="far fa-clock"></i> Last updated: August 23th, 2019</div>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: August 25th, 2019</div>
                 </div><!--//doc-header-->
                 <div class="doc-body row">
                     <div class="doc-content col-md-9 col-12 order-1">
                         <div class="content-inner">
                             <section id="installation-section" class="doc-section">
                                 <h2 class="section-title">Installation</h2>
+                                <div id="step0"  class="section-block">
+                                    <h3 class="block-title">Install Anaconda</h3>
+                                    <p>Download Anaconda Python 2.7 version <a href="https://www.anaconda.com/distribution/" target="_blank">here</a>. </p>
+                                    <p>Follow the <a href="https://docs.anaconda.com/anaconda/install/" target="_blank">instructions</a> to install Anaconda on your computer.<br>
+                                    </p>
+                                </div><!--//section-block-->
                                 <div id="step1"  class="section-block">
                                     <h3 class="block-title">Install TVB Library</h3>
                                     <p>"The Virtual Brain" Project (TVB Project) has the purpose of offering modern tools to the Neurosciences community, for computing, simulating and analyzing functional and structural data of human brains, brains modeled at the level of population of neurons.<br>
                                         For more information, please visit <a href="https://github.com/the-virtual-brain/tvb-root" target="_blank">The Virtual Brain GitHub Repository.</a>
                                     </p>
                                     <div class="code-block">
-                                        <h6>To install TVB code on your machine, we recommend you to first create a dedicated Python env, and afterwards to take our Pypi released packages:</h6>
+                                        <h6>To install TVB code on your machine, we recommend you to first create a dedicated Python environment using Anaconda command.
+                                        <p><code>conda create --name tvb python=2.7</code></p>
+                                        <p><code>conda activate tvb</code></p>
+                                        <br>
+                                        <h6>Run pip from command line to install tvb released packages:</h6>
                                         <p><code>pip install tvb-library</code></p>
                                         <p><code>pip install tvb-framework</code></p>
                                     </div><!--//code-block-->
                                 </div><!--//section-block-->
                                 <div id="step2"  class="section-block">
                                     <h3 class="block-title">Download Python Code</h3>
-                                    <p>Download iPython Notebook from <a href="https://github.com/mlion0200/educase_TVB_braintumor" target="_blank">here</a>
+                                    <p>The GitHub repository contains Python Notebook and sample data can be found <a href="https://github.com/mlion0200/educase_TVB_braintumor" target="_blank">here</a>.
                                     </p>
+                                    <p>To download the git repository, click <b>Clone or download</b>, then <b>Download ZIP</b>.
+                                    <br>If you wish to clone the repository, run the following from commend line.</p>
+                                    <p><code>git clone git@github.com:mlion0200/educase_TVB_braintumor.git</code></p>
                                 </div><!--//section-block-->
                                 <div id="step3"  class="section-block">
                                     <h3 class="block-title">Download Data</h3>
-                                    <p>Data contains fMRI scan of 25 human brain tumor patients with pre-operative and post-operative and 11 human control participants.<br>
-                                        Data can be found <a class="link" href="data.html">here</a>
+                                    <p>Data contains functional and structural connectivity matrices of 25 brain tumor patients and 11 healthy control participants before surgery, and 18 brain tumor patients and 10 healthy control participants after neurosurgery.</p>
+                                    <p>Data is in demo-data folder in the <a href="https://github.com/mlion0200/educase_TVB_braintumor" target="_blank">GitHub repository</a>.</p>
+                                    <p>Data can also be found on OpenNeuro. The pre-operative data can be found <a href="https://openneuro.org/datasets/ds001226/versions/00001", target="_blank">here</a>, and post-operative data can be found <a href="https://openneuro.org/datasets/ds002080/versions/1.0.0" target="_blank">here</a>.
                                     </p>
                                 </div><!--//section-block-->
                             </section><!--//doc-section-->
@@ -94,11 +108,12 @@
                                 <div class="section-block">
                                     <div class="row">
                                         <div class="col-md-6 col-12">
-                                            <h6>Modeling brain dynamics in brain tumor patients using The Virtual Brain</h6>
+                                            <!-- h6>Modeling brain dynamics in brain tumor patients using The Virtual Brain</h6-->
+                                            <h6>To be created</h6>
                                             <!-- 16:9 aspect ratio -->
-                                            <div class="embed-responsive embed-responsive-16by9">
+                                            <!-- div class="embed-responsive embed-responsive-16by9">
                                                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ejBkOjEG6F0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                                            </div>
+                                            </div-->
                                         </div>
                                     </div><!--//row-->
                                 </div><!--//section-block-->
@@ -112,6 +127,7 @@
 	                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
 	                                <a class="nav-link scrollto" href="#installation-section">Installation</a>
                                     <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#step0">Install Anaconda</a>
                                         <a class="nav-link scrollto" href="#step1">Install TVB Library</a>
                                         <a class="nav-link scrollto" href="#step2">Download Python Code</a>
                                         <a class="nav-link scrollto" href="#step3">Download Data</a>
